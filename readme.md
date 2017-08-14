@@ -376,3 +376,51 @@ HTML:
 <p>© © ® ® ™ ™ § § ±</p>
 
 </details>
+
+<details><summary>task-lists</summary><br>
+
+markdown:
+
+``` markdown
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
+```
+
+HTML:
+
+``` html
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Mercury</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Venus</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Earth (Orbit/Moon)</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Mars</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Jupiter</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Saturn</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Uranus</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Neptune</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Comet Haley</li>
+</ul>
+```
+
+范例:
+
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Mercury</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Venus</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Earth (Orbit/Moon)</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Mars</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Jupiter</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Saturn</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Uranus</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Neptune</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Comet Haley</li>
+</ul>
+
+</details>
