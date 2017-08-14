@@ -1,0 +1,80 @@
+<h1 id="123">123 <a class="header-anchor" href="#123" aria-hidden="true">¶</a></h1>
+<p>H<sub>2</sub>0</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Mercury</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Venus</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Earth (Orbit/Moon)</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> Mars</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Jupiter</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Saturn</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Uranus</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Neptune</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Comet Haley</li>
+</ul>
+<p>29<sup>th</sup></p>
+<p>Here is a footnote reference,<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> and another.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
+<p>Here is an inline note.<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></p>
+<dl>
+<dt>Term 1</dt>
+<dd>
+<p>Definition 1</p>
+</dd>
+<dt>Term 2 with <em>inline markup</em></dt>
+<dd>
+<p>Definition 2</p>
+<pre><code>  { some code, part of Definition 2 }
+</code></pre>
+<p>Third paragraph of definition 2.</p>
+</dd>
+<dt>Term 1</dt>
+<dd>
+<p>Definition 1</p>
+</dd>
+<dt>Term 2</dt>
+<dd>
+<p>Definition 2a</p>
+</dd>
+<dd>
+<p>Definition 2b</p>
+</dd>
+</dl>
+<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification
+is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+<p><img class="emoji" draggable="false" alt="😃" src="https://twemoji.maxcdn.com/2/72x72/1f603.png"/> <img class="emoji" draggable="false" alt="😦" src="https://twemoji.maxcdn.com/2/72x72/1f626.png"/></p>
+<p>::: warning
+<em>here be dragons</em>
+:::</p>
+<p><ins>inserted</ins></p>
+<p><mark>marked</mark></p>
+<p>© © ® ® ™ ™ § § ±</p>
+<p><a href="https://github.com/EYHN/echo">https://github.com/EYHN/echo</a></p>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> HTML = echo.render(markdown);
+
+fs.open(<span class="hljs-string">'./out.html'</span>, <span class="hljs-string">'w'</span>, (err, fd) =&gt; {
+    <span class="hljs-comment">// tslint:disable-next-line:no-console</span>
+    <span class="hljs-keyword">if</span> (err) <span class="hljs-built_in">console</span>.log(err);
+    fs.write(fd, HTML, (error) =&gt; {
+        <span class="hljs-comment">// tslint:disable-next-line:no-console</span>
+        <span class="hljs-keyword">if</span> (error) <span class="hljs-built_in">console</span>.log(error);
+        <span class="hljs-comment">// tslint:disable-next-line:no-console</span>
+        <span class="hljs-built_in">console</span>.log(HTML);
+    });
+});
+</code></pre>
+<p><ruby>马猴烧酒<rp></rp><rt>まほうしょうじょ</rt><rp></rp></ruby></p>
+<p><ruby>滑稽<rp></rp><rt>zui qiang</rt><rp></rp></ruby></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Here is the footnote. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Here’s one with multiple blocks.</p>
+<p>Subsequent paragraphs are indented to show that they
+belong to the previous footnote. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>Inlines notes are easier to write, since
+you don't have to pick an identifier and move down to type the
+note. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>

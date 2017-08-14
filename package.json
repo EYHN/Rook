@@ -1,0 +1,47 @@
+{
+  "name": "echo",
+  "version": "1.0.0",
+  "description": "基于 `markdown-it` 的颜艺 `markdown` 解析器",
+  "main": "lib/index.js",
+  "dependencies": {
+    "highlight.js": "^9.12.0",
+    "markdown-it": "^8.3.2",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-anchor": "^4.0.0",
+    "markdown-it-container": "^2.0.0",
+    "markdown-it-deflist": "^2.0.3",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-ins": "^2.0.0",
+    "markdown-it-mark": "^2.0.0",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-task-lists": "^2.0.1",
+    "twemoji": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/highlight.js": "^9.1.9",
+    "@types/markdown-it": "0.0.2",
+    "@types/node": "^8.0.20",
+    "rimraf": "^2.6.1",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.6.0",
+    "typescript": "^2.4.2"
+  },
+  "scripts": {
+    "clean": "rimraf ./lib",
+    "build": "npm run lint && npm run clean && tsc",
+    "lint": "tslint --force --format verbose \"src/**/*.{ts,tsx}\"",
+    "example": "ts-node ./example/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EYHN/echo.git"
+  },
+  "author": "EYHN",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/EYHN/echo/issues"
+  },
+  "homepage": "https://github.com/EYHN/echo#readme"
+}
